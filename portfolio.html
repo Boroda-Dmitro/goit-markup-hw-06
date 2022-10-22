@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo link"> Web<span class="header-logo">Studio</span> </a>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link active">Портфоліо</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contaсts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="header-contaсts-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="header-contaсts-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Наші роботи</h2>
+
+          <ul class="list portfolio-filter">
+            <li class="item"><button class="bnt" type="button">Усі</button></li>
+            <li class="item"><button class="bnt" type="button">Веб-сайти</button></li>
+            <li class="item"><button class="bnt" type="button">Додатки</button></li>
+            <li class="item"><button class="bnt" type="button">Дизайн</button></li>
+            <li class="item"><button class="bnt" type="button">Маркетинг</button></li>
+          </ul>
+          <h2 class="section-title visually-hidden">Приклади</h2>
+
+          <ul class="list examples">
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img src="./images/website-technocrat.jpg" alt="Веб-сайт Технокряк" width="370" />
+
+                  <div class="product-info">
+                    <p class="text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples-info">
+                  <h3 class="title">Технокряк</h3>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img
+                    src="./images/design-poster.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                  />
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples-info">
+                  <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img
+                    src="./images/application-seafood.jpg"
+                    alt="Додаток для ресторану Seafood"
+                    width="370"
+                  />
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples-info">
+                  <h3 class="title">Ресторан Seafood</h3>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img
+                    src="./images/marketing-prime.jpg"
+                    alt="Маркетинг Проєкт Prime"
+                    width="370"
+                  />
+
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples-info">
+                  <h3 class="title">Проєкт Prime</h3>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img
+                    src="./images/applicatiom-boxes.jpg"
+                    alt="Додаток Проєкт Boxes"
+                    width="370"
+                  />
+
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples-info">
+                  <h3 class="title">Проєкт Boxes</h3>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img
+                    src="./images/website-inspiration.jpg"
+                    alt="Веб-сайт Inspiration has no Borders"
+                    width="370"
+                  />
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="examples-info">
+                  <h3 class="title">Inspiration has no Borders</h3>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img
+                    src="./images/design-limited-edition.jpg"
+                    alt="Дизайн для Видання Limited Edition"
+                    width="370"
+                  />
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="examples-info">
+                  <h3 class="title">Видання Limited Edition</h3>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img src="./images/marketing-lab.jpg" alt="Маркетинг Проєкт LAB" width="370" />
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples-info">
+                  <h3 class="title">Проєкт LAB</h3>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="product-example">
+                  <img
+                    src="./images/application-business.jpg"
+                    alt="Додаток Growing Business"
+                    width="370"
+                  />
+                  <div class="product-info">
+                    <p class="text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo at
+                      eveniet quibusdam pariatur quaerat repellendus est sequi nihil. Quas repellat,
+                      ad minus voluptas ratione omnis vel quis a repellendus.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="examples-info">
+                  <h3 class="title">Growing Business</h3>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-information">
+          <div class="footer-group">
+            <a href="./index.html" class="logo footer-logo link"> Web<span>Studio</span> </a>
+            <address>
+              <ul class="list">
+                <li class="item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address-link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                  <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-group">
+            <h2 class="title">Приєднуйтесь</h2>
+
+            <ul class="list social-networks">
+              <li class="social-networks-item">
+                <a class="social-networks-link" href="#" aria-label="Посилання на Іnstagram">
+                  <span class="visually-hidden">Іnstagram</span>
+                  <svg class="social-networks-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-item">
+                <a class="social-networks-link" href="#" aria-label="Посилання на Twitter">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg class="social-networks-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-item">
+                <a class="social-networks-link" href="#" aria-label="Посилання на Facebook">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg class="social-networks-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-item">
+                <a class="social-networks-link" href="#" aria-label="Посилання на Linkedin">
+                  <span class="visually-hidden">Linkedin</span>
+                  <svg class="social-networks-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
