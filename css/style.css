@@ -28,6 +28,7 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --placeholder-footer-color: rgba(255, 255, 255, 0.6);
   --placeholder-modal-color: rgba(117, 117, 117, 0.5);
+  --modai-icon-fill: #212121;
 }
 
 body {
@@ -729,14 +730,15 @@ address .item:not(:last-child) {
 
   width: 30px;
   height: 30px;
-fill: var(--black);
+  fill: var(--black);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
   background-color: var(--primary-background-color);
 }
 
-.modal-close-btn:hover, .modal-close-btn:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -759,6 +761,7 @@ fill: var(--black);
 }
 
 .modal .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -770,6 +773,28 @@ fill: var(--black);
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+}
+
+.form-input {
+  padding: 12px 12px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: var(--modai-icon-fill) ;
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
 }
 
 .modal .comment {
@@ -785,21 +810,37 @@ fill: var(--black);
 }
 
 .policy {
-  flex-direction: row;
+  display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-}
-
-.policy .form-label {
-  margin-left: 7px;
-  font-size: 14px;
+   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .policy .link {
+  margin-left: 3px;
   text-decoration: underline;
   color: var(--accent-color);
 }
 
+.checkbox-policy {
+  appearance: none;
+}
 
+.checkbox-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--modai-icon-fill);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox-policy:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border: none;
+}
