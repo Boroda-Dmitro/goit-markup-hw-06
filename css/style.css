@@ -495,6 +495,11 @@ address .item:not(:last-child) {
   color: var(--white);
 }
 
+.email-form:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
 .email-form::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -762,12 +767,11 @@ address .item:not(:last-child) {
 
 .modal .form-field {
   position: relative;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 10px;
 }
 
 .form-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -776,6 +780,8 @@ address .item:not(:last-child) {
 }
 
 .form-input {
+  display: block;
+  width: 100%;
   padding: 12px 12px 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -783,9 +789,10 @@ address .item:not(:last-child) {
 
 .form-icon {
   position: absolute;
-  bottom: 11px;
+  top: 50%;
   left: 12px;
-  fill: var(--modai-icon-fill) ;
+  transform: translateY(-50%);
+  fill: var(--modai-icon-fill);
 }
 
 .form-input:focus {
@@ -798,6 +805,7 @@ address .item:not(:last-child) {
 }
 
 .modal .comment {
+  height: 120px;
   padding: 12px 16px;
   resize: none;
 }
@@ -809,25 +817,25 @@ address .item:not(:last-child) {
   color: var(--placeholder-modal-color);
 }
 
-.policy {
+.contract {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-   font-size: 14px;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.policy .link {
+.contract .link {
   margin-left: 3px;
   text-decoration: underline;
   color: var(--accent-color);
 }
 
-.checkbox-policy {
+/* .checkbox-contract {
   appearance: none;
-}
+  } */
 
 .checkbox-icon {
   display: flex;
@@ -840,7 +848,7 @@ address .item:not(:last-child) {
   margin-right: 7px;
 }
 
-.checkbox-policy:checked + .checkbox-icon {
+.checkbox-contract:checked + .checkbox-icon {
   background-color: var(--accent-color);
   border: none;
 }
