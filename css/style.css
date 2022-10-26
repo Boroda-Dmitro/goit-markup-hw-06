@@ -852,3 +852,9 @@ address .item:not(:last-child) {
   background-color: var(--accent-color);
   border: none;
 }
+
+.checkbox-contract:focus + .checkbox-icon {
+  border-color: var(--accent-color);
+}
+
+
